@@ -1,60 +1,59 @@
 # Localizable.strings2Excel
 
-Python command line tool for conversion between iOS strings files and excel files & between android strings.xml files and excl files. & strings files to android strings.xml files.
+iOS 本地化文件（.strings）与 Excel 互相转换 & android 的 strings.xml 与 Excel 互相转换 & iOS 本地化文件 转换成 android 的 strings.xml 文件的 Python 脚本工具
 
+## 特性
 
-## Features
+- [x] 支持将 **iOS** strings 文件转换成 **excel** 文件
+- [x] 支持将 **excel** 文件转换成 **iOS** strings 文件
+- [x] 支持将 **android** xml 文件转换成 **excel** 文件
+- [x] 支持将 **excel** 文件转换成 **android** xml 文件
+- [x] 支持将 **iOS** strings 文件转换成 **android** xml 文件
 
-- [x] Support convert **iOS** strings files to **excel** files.
-- [x] Support convert **excel** files to **iOS** strings files.
-- [x] Support convert **android** xml files to **excel** files.
-- [x] Support convert **excel** files to **android** xml files.
-- [x] Support convert **iOS** strings files to **android** xml files.
-
-## Version
+## 当前版本
 
 **V1.0.0**
 
-## Required
+## 所需环境
 
-### 1.Check python version
+### 1.检查 python 版本
 
-python version must be 2.x.
+python 版本必须是 2.x
 
 ```
 $ python --version
 Python 2.7.10
 ```
 
-### 2.Check pip(python package manager)
+### 2.检查 pip(python 包管理器)
 
 ```
 $ pip --version
 pip 19.0 from /Library/Python/2.7/site-packages/pip (python 2.7)
 ```
 
-if pip is not installed
+如果没有安装 pip
 
 ```
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 sudo python get-pip.py
 ```
 
-### 3.Install pyexcelerator
+### 3.安装 pyexcelerator
 
 ```
 sudo pip install pyExcelerator
 ```
 
-### 4.Install xlrd
+### 4.安装 xlrd
 
 ```
 sudo pip install xlrd
 ```
 
-## Usage
+## 使用说明
 
-### 1.Convert **iOS** strings files to **excel** files.
+### 1.将 **iOS** strings 文件转换成 **excel** 文件
 
 ```
 $ python python/Strings2Xls.py -f examples/ios/ -t examples/output
@@ -64,7 +63,7 @@ Convert examples/ios/ successfully! you can see xls file in examples/output/stri
 
 ![](imgs/1.0.0/strings-2-xls.jpg)
 
-### 2.Convert **excel** files to **iOS** strings files
+### 2.将 **excel** 文件转换成 **iOS** strings 文件
 
 ```
 $ python python/Xls2Strings.py -f examples/output/strings-files-to-xls_20190129_165830/ -t examples/ou
@@ -79,7 +78,7 @@ Convert examples/output/strings-files-to-xls_20190129_165830/ successfully! you 
 
 ![](imgs/1.0.0/xls-2-strings.jpg)
 
-### 3.Convert **android** xml files to **excel** files
+### 3.将 **android** xml 文件转换成 **excel** 文件
 
 ```
 $ python python/Xml2Xls.py -f examples/android/ -t examples/output
@@ -92,7 +91,7 @@ Convert examples/android/ successfully! you can see xls file in examples/output/
 
 ![](imgs/1.0.0/xml-2-xls.jpg)
 
-### 4.Convert **excel** files to **android** xml files
+### 4.将 **excel** 文件转换成 **android** xml 文件
 
 ```
 $ python python/Xls2Xml.py -f examples/output/xml-files-to-xls_20190129_172938/ -t examples/output/
@@ -106,7 +105,7 @@ Convert examples/output/xml-files-to-xls_20190129_172938/ successfully! you can 
 
 ![](imgs/1.0.0/xls-2-xml.jpg)
 
-### 5.Convert **iOS** strings files to **android** xml files.
+### 5.将 **iOS** strings 文件转换成 **android** xml 文件
 
 ```shell
 $ python python/Strings2Xml.py -f examples/ios/en.lproj/ -t examples/output/
@@ -126,12 +125,9 @@ Convert successfully! you can see xml files in examples/output//strings-files-to
 
 ![](imgs/1.0.0/strings-2-xml.jpg)
 
-## ChangeLog
+## 贡献者
 
-[ChangeLog](https://github.com/CatchZeng/Localizable.strings2Excel/blob/master/CHANGELOG.md)
-
-## Thanks
-
+- [CatchZeng](https://github.com/CatchZeng)
 - [Buguibu](https://github.com/buguibu)
 - [vgutierrezNologis](https://github.com/vgutierrezNologis)
 - [linguinan](https://github.com/linguinan)
