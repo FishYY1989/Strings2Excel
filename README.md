@@ -1,0 +1,2 @@
+# Strings2Excel
+Android和iOS多语言文件转换成excel表格
