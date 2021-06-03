@@ -7,7 +7,7 @@ from StringsFileUtil import StringsFileUtil
 from Log import Log
 import time
 import os
-
+import sys
 
 def addParser():
     parser = OptionParser()
@@ -55,7 +55,9 @@ def startConvert(options):
     Log.info("Convert successfully! you can see xml files in %s" % (targetDir))
 
 
-def main():
+def main(): 
+    reload(sys)
+    sys.setdefaultencoding("utf8")
     options = addParser()
     startConvert(options)
 
